@@ -13,26 +13,35 @@ such).
 
 ## Contents
 
-*   [What is this?](#what-is-this)
-*   [When to use this](#when-to-use-this)
-*   [Install](#install)
-*   [Use](#use)
-*   [API](#api)
-    *   [`directive()`](#directive)
-    *   [`directiveHtml(options?)`](#directivehtmloptions)
-    *   [`Directive`](#directive-1)
-    *   [`Handle`](#handle)
-    *   [`HtmlOptions`](#htmloptions)
-*   [Authoring](#authoring)
-*   [HTML](#html)
-*   [CSS](#css)
-*   [Syntax](#syntax)
-*   [Types](#types)
-*   [Compatibility](#compatibility)
-*   [Security](#security)
-*   [Related](#related)
-*   [Contribute](#contribute)
-*   [License](#license)
+- [micromark-extension-directive](#micromark-extension-directive)
+  - [Contents](#contents)
+  - [What is this?](#what-is-this)
+  - [When to use this](#when-to-use-this)
+  - [Install](#install)
+  - [Use](#use)
+  - [API](#api)
+    - [`directive()`](#directive)
+          - [Returns](#returns)
+    - [`directiveHtml(options?)`](#directivehtmloptions)
+          - [Parameters](#parameters)
+          - [Returns](#returns-1)
+    - [`Directive`](#directive-1)
+          - [Fields](#fields)
+    - [`Handle`](#handle)
+          - [Parameters](#parameters-1)
+          - [Returns](#returns-2)
+    - [`HtmlOptions`](#htmloptions)
+          - [Type](#type)
+  - [Authoring](#authoring)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [Syntax](#syntax)
+  - [Types](#types)
+  - [Compatibility](#compatibility)
+  - [Security](#security)
+  - [Related](#related)
+  - [Contribute](#contribute)
+  - [License](#license)
 
 ## What is this?
 
@@ -298,6 +307,8 @@ this implementation mimics CommonMark as closely as possible:
     (~~`:::a:::`~~) — because it’s not allowed in fenced code either
 *   The label and attributes in a leaf or container cannot include line endings
     (~~`::a[b\nc]`~~) — because it’s not allowed in fenced code either
+
+In Japan, many Markdown notation-based blog sites such as **Qiita** and **Zenn** allow spaces between words in directive notation, so I made the corresponding change, but CommonMark may not allow it, so I will not send a pull request.
 
 ## Types
 
