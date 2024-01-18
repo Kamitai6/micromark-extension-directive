@@ -36,6 +36,7 @@ export function factoryName(effects, ok, nok, type) {
     if (
       code === codes.dash ||
       code === codes.underscore ||
+      code === codes.space ||
       asciiAlphanumeric(code)
     ) {
       effects.consume(code)
@@ -43,7 +44,9 @@ export function factoryName(effects, ok, nok, type) {
     }
 
     effects.exit(type)
-    return self.previous === codes.dash || self.previous === codes.underscore
+    return self.previous === codes.dash ||
+      self.previous === codes.underscore ||
+      self.previous === codes.space
       ? nok(code)
       : ok(code)
   }
