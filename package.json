@@ -16,8 +16,8 @@
   "repository": "Kamitai6/micromark-extension-directive",
   "bugs": "https://github.com/Kamitai6/micromark-extension-directive/issues",
   "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/unified"
+    "type": "github",
+    "url": "https://github.com/sponsors/Kamitai6"
   },
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
