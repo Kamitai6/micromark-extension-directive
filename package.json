@@ -1,6 +1,6 @@
 {
   "name": "micromark-extension-directive",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "micromark extension to support generic directives (`:cite[smith04]`)",
   "license": "MIT",
   "keywords": [
@@ -14,14 +14,15 @@
     "unified"
   ],
   "repository": "micromark/micromark-extension-directive",
-  "bugs": "https://github.com/micromark/micromark-extension-directive/issues",
+  "bugs": "https://github.com/Kamitai6/micromark-extension-directive/issues",
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/unified"
   },
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
-    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "Kamitai <> ()"
   ],
   "sideEffects": false,
   "type": "module",
